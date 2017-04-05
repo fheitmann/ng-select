@@ -21,7 +21,10 @@
                 [ngStyle]="getOptionStyle(option)"
                 (click)="onOptionClick(option)"
                 (mouseover)="onOptionMouseover(option)">
-                {{option.label}}
+                <label>
+                    <input type="checkbox" />
+                    {{option.label}}
+                </label>
             </li>
             <li
                 *ngIf="!optionList.hasShown"
