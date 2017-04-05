@@ -11,6 +11,9 @@
     "selectize",
     "chosen"
   ],
+   "scripts": {
+   "prepublish": "tsc && autodts generate",
+   }
   "author": "Bastiaan van den Berg <b.a.vandenberg@gmail.com>",
   "license": "ISC",
   "bugs": {
