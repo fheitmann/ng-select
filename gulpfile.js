@@ -30,7 +30,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function() {
-    return del(['./aot', './dist/**/*']);
+    //return del(['./aot', './dist/**/*']);
 });
 
 // Test.
