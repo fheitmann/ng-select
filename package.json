@@ -21,7 +21,9 @@
     "url": "https://github.com/basvandenberg/ng-select/issues"
   },
   "homepage": "https://basvandenberg.github.io/ng-select",
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
   "devDependencies": {
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
