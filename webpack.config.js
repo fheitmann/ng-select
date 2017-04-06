@@ -1,7 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const copyrightBanner = require("fs").readFileSync("./COPYRIGHT", "utf-8")
 const autoprefixer = require('autoprefixer')
 
 module.exports = {
@@ -24,8 +23,7 @@ module.exports = {
     return [autoprefixer]
   },
   plugins: [
-    new webpack.BannerPlugin(copyrightBanner, {entryOnly:true}),
-    new webpack.optimize.DedupePlugin(),
+  new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new ExtractTextPlugin("theme.css", {allChunks:true}),
     new webpack.optimize.UglifyJsPlugin({
