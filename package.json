@@ -22,9 +22,7 @@
   },
   "homepage": "https://basvandenberg.github.io/ng-select",
   "dependencies": {
-    "gulp": "^3.9.1"
-  },
-  "devDependencies": {
+    "gulp": "^3.9.1",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/compiler-cli": "^4.0.0",
@@ -47,5 +45,7 @@
     "tslint": "^4.2.0",
     "typescript": "^2.2.0",
     "zone.js": "^0.8.5"
+  },
+  "devDependencies": {
   }
 }
