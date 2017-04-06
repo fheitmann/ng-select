@@ -24,8 +24,6 @@ module.exports = {
   },
   plugins: [
   new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new ExtractTextPlugin("theme.css", {allChunks:true}),
     new webpack.optimize.UglifyJsPlugin({
       mangle: {
         except: ['require', 'export', '$super']
