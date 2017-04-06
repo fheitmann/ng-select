@@ -29,17 +29,6 @@ gulp.task('watch', function() {
     gulp.watch(['./src/**/*'], ['build']);
 });
 
-gulp.task('clean', function() {
-    return del(['./aot', './dist/**/*']);
-});
-
-// Test.
-
-gulp.task('test', function() {
-    gulp.src('./dist/**/*.spec.js')
-        .pipe(jasmine());
-});
-
 // Typescript --> Javascript.
 
 gulp.task('lint:ts', function() {
