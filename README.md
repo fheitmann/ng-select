@@ -1,3 +1,6 @@
+
+# this fork adds a checkbox for each option
+
 # Select component for angular
 [![npm version](https://badge.fury.io/js/ng-select.svg)](https://badge.fury.io/js/ng-select)
 [![Build Status](https://travis-ci.org/basvandenberg/ng-select.svg?branch=master)](https://travis-ci.org/basvandenberg/ng-select)
