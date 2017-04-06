@@ -30,13 +30,13 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function() {
-    return del(['./aot', './dist/**/*']);
+    return del(['./aot', './src/**/*']);
 });
 
 // Test.
 
 gulp.task('test', function() {
-    gulp.src('./dist/**/*.spec.js')
+    gulp.src('./src/**/*.spec.js')
         .pipe(jasmine());
 });
 
