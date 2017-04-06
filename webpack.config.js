@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const autoprefixer = require('autoprefixer')
 module.exports = {
- entry: './index.ts',
+ entry: './src/index.ts',
  output: {
    filename: 'bundle.js',
    path: __dirname
