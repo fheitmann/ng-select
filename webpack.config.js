@@ -1,6 +1,5 @@
 const path = require('path')
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const autoprefixer = require('autoprefixer')
 
 module.exports = {
@@ -51,18 +50,6 @@ module.exports = {
         test: /\.tsx?$/,
         loaders: ['ts'],
         include: [path.join(__dirname, 'src'),path.join(__dirname, 'theming')]
-      },
-      {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract(require.resolve("style-loader"),require.resolve("css-loader")+"!"+require.resolve("postcss-loader")+"!"+require.resolve("sass-loader")),
-        include: path.join(__dirname, 'theming')
-      },
-      {
-        test: /\.(jpg|png|svg)$/,
-        loaders: [
-            'file-loader?name=[path][name].[ext]'
-        ],
-        include: path.join(__dirname, 'theming')
       }
     ]
   }
