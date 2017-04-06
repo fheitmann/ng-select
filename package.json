@@ -13,7 +13,7 @@
   ],
    "scripts": {
    "prepublish": "tsc && autodts generate",
-    "postinstall": "rm -rf lib; rm -rf release; rm release/ignore.js; ../.bin/tsc; ../.bin/webpack; "
+    "postinstall": "rm -rf lib; rm -rf release; rm release/ignore.js; gulp; "
    },
   "author": "Bastiaan van den Berg <b.a.vandenberg@gmail.com>",
   "license": "ISC",
