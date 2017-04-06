@@ -10,19 +10,14 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'release'),
     filename: '[name].js',
-    library:["Searchkit"],
     libraryTarget:"umd",
-    publicPath: '',
-    css: 'theme.css'
+    publicPath: ''
   },
   resolve: {
     extensions:[".js", ".ts", ".tsx","", ".webpack.js", ".web.js", ".scss"]
   },
-  postcss: function () {
-    return [autoprefixer]
-  },
   plugins: [
-  new webpack.optimize.DedupePlugin(),
+     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
       mangle: {
         except: ['require', 'export', '$super']
@@ -40,10 +35,6 @@ module.exports = {
       }
     })
   ],
-  externals: {
-    "react": "React",
-    "react-dom":"ReactDOM"
-  },
   module: {
     loaders: [
       {
